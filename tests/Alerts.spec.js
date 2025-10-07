@@ -40,5 +40,4 @@ page.on('dialog', async dialog=>{
 await page.locator('[id="promptBtn"]').click();
 await expect(await page.locator('//p[starts-with(text(),"Hello Syed! How")]')).toHaveText("Hello Syed! How are you today?");
 await page.waitForTimeout(4000);
-await page.close();
 })
